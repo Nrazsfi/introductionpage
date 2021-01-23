@@ -1,0 +1,79 @@
+@media only screen and (max-width: 550px) {
+  html{
+    font-size: 15px;
+  }
+
+  .wrap {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-auto-flow: column;
+    grid-template-areas: 
+      "1"
+      "2"
+      "3"
+      "4"
+      "5"
+      "6"
+      "7"
+      "8"
+      "9";
+  }
+
+  .grid__item {
+    width: 100vw;
+  }
+
+  .turquoise {
+    grid-area: 2;
+    font-size: 1.6rem;
+  }
+
+  .green {
+    grid-area: 1;
+    font-size: 8vw;
+    margin-bottom: 0vh;
+    padding-top: 1vh;
+   
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    width: 80%;
+    margin: auto;
+    font-size: 1.5rem;
+  }
+  
+  .red {
+    grid-area: 3;
+  }
+  .blue {
+    grid-area: 4;
+  }
+  .center {
+    grid-area: 5;
+  }
+  .pastel {
+    grid-area: 6;
+  }
+  .brown {
+    grid-area: 7;
+  }
+  .black {
+    grid-area: 8;
+  }
+  .grey {
+    grid-area: 9;
+  }
+
+  .main, .footer {
+    margin-bottom: 9vh;
+    padding-top: 2vh;
+  }
+
+  .grey:hover, .black:hover, .brown:hover, .pastel:hover, .center:hover, .blue:hover, .red:hover, .green:hover, .turquoise:hover {
+    transform: none;
+  }
+}

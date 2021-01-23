@@ -1,0 +1,200 @@
+/*
+ * --- ROOT ---
+*/
+
+:root{
+  --padding: 2rem;
+  --margin:  2rem;
+  --font-size: 2rem;
+  --title-size: 3rem;
+  --border: 1px solid black;
+}
+
+html {
+  font-size: 18px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+  font-size: 8vw;
+}
+
+.wrap {
+  width: 100vh;
+}
+.grid {
+  display: grid;
+  height: 100vh;
+  width:  100vw;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  align-content: stretch;
+  align-self: stretch;
+}
+
+.grid_item {
+  max-width: 100vw;
+  max-height: 100vh;
+  vertical-align: center;
+}
+
+dmv {
+  margin-top: 0;
+}
+
+.turquoise {
+  background-color: rgb(123, 255, 242);
+  text-align: center; 
+  font-size: 1.5rem;
+  padding-top: 7.8vh;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  transition-duration: 2s;
+  transition-timing-function: 2s;
+  transform-origin: 0% 0%;
+}
+
+.green {
+  background-color: rgb(102, 230, 102); 
+  text-align: center;
+  padding-bottom: 0;
+  transition-duration: 2s;
+  transition-timing-function: 2s;
+  transform-origin: 50% 0%;
+  font-size: 1.5rem;
+}
+
+.title {
+  color: rgb(209, 0, 0);
+  padding-top: 5vh;
+}
+
+.subtitle {
+  color: brown;
+  padding-top: 3vh;
+  padding-bottom: 0;
+  
+}
+.red {
+  background-color: rgb(247, 135, 187);
+  text-align: center;
+  padding-top: 6vh;
+  transition-duration: 2s;
+  transition-timing-function: 2s;
+  transform-origin: 100% 0%;
+}
+
+.mypic{
+  width: 5.8rem;
+  height: 5.8rem;
+  border-radius: 4.8px;
+}
+
+
+.main {
+  text-align: center; 
+  padding-top: 2rem;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 1.5rem;
+}
+
+.blue {
+  background-color: rgb(162, 162, 255); 
+  text-align: center; 
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  padding-left: 0;
+  padding-right: 0;
+  transition-duration: 2s;
+  transition-timing-function: 2s;
+  transform-origin: 0% 50%;
+}
+
+.center {
+  background-color: rgb(255, 205, 111); 
+  text-align: center; 
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  padding-left: 0;
+  padding-right: 0;
+  transition-duration: 2s;
+  transition-timing-function: 2s;
+  transform-origin: 50% 50%;
+}
+
+.pastel {
+  background-color: rgb(194, 193, 193); 
+  text-align: center; 
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  padding-left: 0;
+  padding-right: 0;
+  transition-duration: 2s;
+  transition-timing-function: 2s;
+  transform-origin: 100% 50%;
+}
+
+.footer {
+  text-align: center;
+  color:aliceblue;
+  padding-top: 2rem;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 1.5rem;
+  transition-duration: 2s;
+  transition-timing-function: 2s;
+}
+
+.brown {
+  background-color: rgb(145, 45, 45); 
+  text-align: center; 
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  padding-left: 0;
+  padding-right: 0;
+  transition-duration: 2s;
+  transition-timing-function: 2s;
+  transform-origin: 0% 100%;
+}
+
+.black {
+  background-color: rgb(9, 1, 112); 
+  text-align: center; 
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  padding-left: 0;
+  padding-right: 0;
+  transition-duration: 2s;
+  transition-timing-function: 2s;
+  transform-origin: 50% 100%;
+}
+
+.grey {
+  background-color: rgb(99, 99, 99); 
+  text-align: center; 
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  padding-left: 0;
+  padding-right: 0;
+  transition-duration: 2s;
+  transition-timing-function: 1s;
+  transform-origin: 100% 100%;
+}
+
+
+.grey:hover, .black:hover, .brown:hover, .pastel:hover, .center:hover, .blue:hover, .red:hover, .green:hover, .turquoise:hover {
+  box-shadow: 5px 8px 5px 0 rgb(255, 187, 0);
+  transform: scale(2.5);
+  transition-delay: 1s;
+}
+
+
+

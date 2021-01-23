@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="main.css">
-    <title>Bemutatkozóoldal</title>
-</head>
-<body>
-    <div class="container">
-        <h4>anora</h4>
-        <p>junior front-end developer</p>
-        <img src="assets/anora.jpg" alt="pictureofme">
-    </div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>anora</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/anora.png">
+    <link href="reset.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="modifiers.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    <script src="script.js"></script>
+  </head>
+  <body class="wrap">
+  <div class="grid">
+    <header class="grid__item turquoise">
+      <h1 class="dmv header">Hello World!</br>Welcome to my World!</h1>
+    </header>
+    <header class="grid__item green">
+      <h1 class="title header">ANORA</h1>
+      <h3 class="subtitle header">junior front-end developer</h3>
+    </header>
+    <header class="grid__item red">
+      <p class="pic border header"><img class="mypic" src="assets/anora.jpg" alt="anora profile pic" title="anora"></p>
+    </header>
+    <aside class="grid__item blue">
+      <h1 class="main">HTML</h1>
+    </aside>
+    <section class="grid__item center">
+      <h1 class="main button">CSS</h1>
+    </section>
+    <aside class="grid__item pastel">
+      <h1 class="main">JS</h1>
+    </aside>
+    <footer class="grid__item brown">
+      <p class="footer">CV & motivation</p>
+    </footer>
+    <footer class="grid__item black">
+      <p class="footer contact">Contact</p>
+    </footer>
+    <footer class="grid__item grey">
+      <p class="footer">Portfolio</p>
+    </footer>
+  </div>
 </body>
 </html>
