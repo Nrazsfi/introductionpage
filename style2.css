@@ -1,0 +1,145 @@
+* {
+margin: 0;
+padding: 0;
+border:0;
+font-size: 100%;
+}
+.container {
+  display: grid;
+  grid-template-areas:
+  "header header header"
+  "menu content sidebar"
+  "footer footer footer";
+  grid-template-columns: 150px 1fr 150px;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 5px;
+  height: 100vh;
+  background-color: brown;
+}
+
+@media (max-width: 768px){
+  .container {
+    grid-template-areas:
+    "header"
+    "menu"
+    "content"
+    "sidebar"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 50px 1fr 50px 50px;
+  }
+}
+
+.header {
+  grid-row-start: header;
+  grid-column-start: header;
+  grid-row-end: header;
+  grid-column-end: header;
+  background-color: orangered;
+  font-size: 2rem;
+  text-align: center;
+  padding: 15px;
+  grid-area: header;
+  letter-spacing: .6rem;
+  text-transform: uppercase;
+}
+
+
+.menu {
+  grid-row-start: menu;
+  grid-row-end: menu;
+  grid-column-start: menu;
+  grid-column-end: menu;
+  background-color: turquoise;
+  text-align: center;
+  padding: 8px;
+  grid-area: menu;
+  display: block;
+  border-radius: 8px;
+}
+
+.menuul {
+  list-style: none;
+  border-radius: 1rem;
+  margin-left: 5px;
+}
+
+.menuli {
+  display: inline-block;
+  margin-left: 15px;
+  padding: 10px;
+}
+
+.menuhref {
+  text-decoration: none;
+  padding: 3px;
+}
+
+.content {
+  grid-row-start: content;
+  grid-row-end: content;
+  grid-column-start: content;
+  grid-column-end: content;
+  background-color: burlywood;
+  text-align: center;
+  grid-area:content;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.section {
+  border: 2px solid brown;
+}
+
+.legend {
+  text-align: left;
+  margin-left: 25px;
+  padding: 10px;
+}
+
+.legendh1 {
+  font-size: 150%;
+}
+
+.time {
+  font-size: 85%;
+}
+
+.article {
+  margin: 15px;
+  padding: 5px;
+}
+.sidebar {
+  grid-row-start:sidebar;
+  grid-row-end:sidebar;
+  grid-column-start: sidebar;
+  grid-column-end: sidebar;
+  background-color: grey;
+  color: pink;
+  text-align: center;
+  padding: 15px;
+  grid-area: sidebar;
+  font-size: 89%;
+  overflow: scroll;
+  border-radius: 8px;
+}
+
+.footer {
+  grid-row-start: footer;
+  grid-row-end: footer;
+  grid-column-start: footer;
+  grid-column-end: footer;
+  background-color: black;
+  color:white;
+  text-align:center;
+  font-size: 2rem;
+  padding: 15px;
+  grid-area: footer;
+  display: inline-flex;
+  font-size: 75%;
+  border-radius: 8px;
+}
+
+footer p {
+  margin-left: 5px;
+}
