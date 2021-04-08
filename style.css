@@ -4,7 +4,7 @@
 
 :root{
   --padding: 2rem;
-  --margin:  2rem;
+  --margin:  1rem;
   --font-size: 2rem;
   --title-size: 3rem;
   --border: 1px solid black;
@@ -20,6 +20,7 @@ html {
 }
 
 body {
+  padding:0;
   margin: 0;
   background-color: white;
   font-size: 8vw;
@@ -44,13 +45,14 @@ body {
   vertical-align: center;
 }
 
-dmv {
+.dmvheader {
   margin-top: 0;
+  font-size: 1.5rem;
 }
 
 .turquoise {
   background-color: rgb(123, 255, 242);
-  text-align: center; 
+  text-align: center;
   font-size: 1.5rem;
   padding-top: 7.8vh;
   padding-left: 0;
@@ -62,44 +64,52 @@ dmv {
 }
 
 .green {
-  background-color: rgb(102, 230, 102); 
+  background-color: rgb(102, 230, 102);
   text-align: center;
   padding-bottom: 0;
   transition-duration: 2s;
   transition-timing-function: 2s;
   transform-origin: 50% 0%;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .title {
   color: rgb(209, 0, 0);
-  padding-top: 5vh;
+  margin-bottom: 0;
+  padding-top: .9vh;
 }
 
 .subtitle {
   color: brown;
-  padding-top: 3vh;
-  padding-bottom: 0;
-  
+  padding-top: 5px;
+  margin-top: 0;
+
 }
 .red {
   background-color: rgb(247, 135, 187);
   text-align: center;
-  padding-top: 6vh;
   transition-duration: 2s;
   transition-timing-function: 2s;
-  transform-origin: 100% 0%;
+  transform-origin: 100% -0%;
 }
+ .pic{
+   display:block;
+   margin: 2rem;
+   ;
+
+ }
 
 .mypic{
-  width: 5.8rem;
+  display: block;
+  margin: auto;
+  width: 5.4rem;
   height: 5.8rem;
   border-radius: 4.8px;
 }
 
 
 .main {
-  text-align: center; 
+  text-align: center;
   padding-top: 2rem;
   padding-left: 0;
   padding-right: 0;
@@ -107,8 +117,8 @@ dmv {
 }
 
 .blue {
-  background-color: rgb(162, 162, 255); 
-  text-align: center; 
+  background-color: rgb(162, 162, 255);
+  text-align: center;
   font-size: 1.5rem;
   padding-top: 2rem;
   padding-left: 0;
@@ -119,8 +129,8 @@ dmv {
 }
 
 .center {
-  background-color: rgb(255, 205, 111); 
-  text-align: center; 
+  background-color: rgb(255, 205, 111);
+  text-align: center;
   font-size: 1.5rem;
   padding-top: 2rem;
   padding-left: 0;
@@ -131,15 +141,15 @@ dmv {
 }
 
 .pastel {
-  background-color: rgb(194, 193, 193); 
-  text-align: center; 
+  background-color: rgb(194, 193, 193);
+  text-align: center;
   font-size: 1.5rem;
   padding-top: 2rem;
   padding-left: 0;
   padding-right: 0;
   transition-duration: 2s;
   transition-timing-function: 2s;
-  transform-origin: 100% 50%;
+  transform-origin: 100% 100%;
 }
 
 .footer {
@@ -154,8 +164,8 @@ dmv {
 }
 
 .brown {
-  background-color: rgb(145, 45, 45); 
-  text-align: center; 
+  background-color: rgb(145, 45, 45);
+  text-align: center;
   font-size: 1.5rem;
   padding-top: 2rem;
   padding-left: 0;
@@ -166,8 +176,8 @@ dmv {
 }
 
 .black {
-  background-color: rgb(9, 1, 112); 
-  text-align: center; 
+  background-color: rgb(9, 1, 112);
+  text-align: center;
   font-size: 1.5rem;
   padding-top: 2rem;
   padding-left: 0;
@@ -178,8 +188,8 @@ dmv {
 }
 
 .grey {
-  background-color: rgb(99, 99, 99); 
-  text-align: center; 
+  background-color: rgb(99, 99, 99);
+  text-align: center;
   font-size: 1.5rem;
   padding-top: 2rem;
   padding-left: 0;
@@ -195,6 +205,3 @@ dmv {
   transform: scale(2.5);
   transition-delay: 1s;
 }
-
-
-

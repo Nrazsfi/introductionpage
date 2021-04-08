@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: 100vw;
     grid-auto-flow: column;
-    grid-template-areas: 
+    grid-template-areas:
       "1"
       "2"
       "3"
@@ -33,7 +33,7 @@
     font-size: 8vw;
     margin-bottom: 0vh;
     padding-top: 1vh;
-   
+
   }
 
   .title {
@@ -45,7 +45,7 @@
     margin: auto;
     font-size: 1.5rem;
   }
-  
+
   .red {
     grid-area: 3;
   }
