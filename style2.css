@@ -89,13 +89,14 @@ font-size: 100%;
 }
 
 .section {
-  border: 2px solid brown;
+  border: 1px solid brown;
+  background-color: lightyellow;
 }
 
 .legend {
   text-align: left;
   margin-left: 25px;
-  padding: 10px;
+  margin-top: 15px;
 }
 
 .legendh1 {
@@ -110,6 +111,11 @@ font-size: 100%;
   margin: 15px;
   padding: 5px;
   text-align: justify;
+}
+
+.ordered_list {
+  list-style-position: inside;
+  margin: 1.5%
 }
 .sidebar {
   grid-row-start:sidebar;
