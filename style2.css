@@ -85,7 +85,7 @@ font-size: 100%;
   grid-area:content;
   padding: 15px;
   border-radius: 8px;
-  line-height: 1.3rem;
+  line-height: 1.5rem;
 }
 
 .section {
@@ -115,8 +115,14 @@ font-size: 100%;
 
 .ordered_list {
   list-style-position: inside;
-  margin: 1.5%
+  margin: 1.5rem;
 }
+
+.ulli {
+  list-style: circle;
+  list-style-position: inside;
+}
+
 .sidebar {
   grid-row-start:sidebar;
   grid-row-end:sidebar;
