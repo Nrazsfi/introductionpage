@@ -35,6 +35,30 @@
     </br>  ---->
         <section class="section">
           <legend class="legend">
+            <h1 class="legendh1">Objektumok</h1>
+            <time class="time" datetime="2021-04-09 20:00"><i>2021.04.13.</i></time>
+            <article class="article">Most olvasás közben jegyzetelek, mert itt is sok a definíció, és így legalább
+              lefordítom embernyelvre magamnak. Szóval az objektumok változókat és függvényeket tartalmaznak. A változókat
+              az objektumokban tulajdonságoknak (property) nevezzük, a függvények meg átneveződnek metódusokká (method). A
+              tulajdonságok és metódusok nevei az objektumban kulcsszavak (key). A tulajdonságok értékei minden esetben értékek (value), a metódus
+              értéke a függvény. És itt nyugodtan ki lehet rohanni a világból.</br>
+              Hozzáférés pl: var hotelName = hotel (ez az objektum neve).name (ez pedig a tulajdonsága, vagy metódusnál a függvény neve);
+              és a végén pontosvessző. A másik mód: var hotelName = hotel['name']; ez nem annyira gyakori,
+              de néha ez kell, majd később lesz rá példa a könyvben.</br>
+              Kétféle képpen lehet objektumot létrehozni: literal notation és constructor notation szintaxisokkal. A constructor rugalmasabbnak
+              tűnik, és itt be is hozza a this és a new kulcsszavakat.</br>
+
+              <ol class="ordered_list">
+                <li class="olli">majdnem azt írtam, hogy az objektumok a legunalmasabb és legbonyolultabb dolgok js-ben, amikor elkezdtem gyanakodni,
+                  hogy korai az ítéletem, és akkor a this és new kulcsszavak mentén nyomozni kezdtem, és lám, ezt találtam a w3s-n:</li>
+                <li class="olli">https://www.w3schools.com/js/js_object_definition.asp</li>
+                <li class="olli">a könyv ígérete szerint lesz még bőven objektumos példa, úgyhogy még nem izgulok annyira, vagyis már épp eléggé</li>
+               <li class="olli">tisztára krimi ez az egész js</li>
+              </ol>
+          </legend>
+        </section>
+        <section class="section">
+          <legend class="legend">
             <h1 class="legendh1">Még több függvény</h1>
             <time class="time" datetime="2021-04-09 20:00"><i>2021.04.12.</i></time>
             <article class="article">Ma ott folytatódik a függvény-sztori, hogy a függvényt változóként hívjuk meg,
@@ -43,8 +67,8 @@
               amit kintről hívunk meg. Mivel ilyet szerintem még sose csináltam, emlékeztetőül a listába írom az egyik
               meghívós példakódot.</br>
               Aztán még definíciók jöttek, függény deklarálás (function declaration), függvény kifejezés (function expression), IIFE,
-              ami azonnal meghívja magát, aminek a titka a kifejezés végére tett (). A kifejezés attól kifejezés, hogy változót deklarál függvényen belül,
-              a sima függvény deklarálás ezt nem teszi, max függvényen kívül, ahol meghívja a függvényt. Az IIFE értelmét most még nem látom, de
+              ami azonnal meghívja magát (önkioldó függvény), aminek a titka a kifejezés végére tett (). A kifejezés attól kifejezés, hogy változót deklarál függvényen belül,
+              a sima függvény deklarálás ezt nem teszi, max függvényen kívül, ahol meghívja a függvényt. Az IIFE értelmét most még nem annyira látom, de
               majd később lesznek rá példák, akkor erre visszatérek.</br>
               Volt még a változók hatásköre (scope), a lokális, amit a függvényben deklarálunk, és a globális, amit meg nem benne, és
               ennek a memóriára, és az oldal gyorsaságára gyakorolt hatása. És itt jut az eszembe a let meg a const, amiket majd
