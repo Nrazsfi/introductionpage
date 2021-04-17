@@ -33,10 +33,61 @@
           </legend>
         </section>
     </br>  ---->
+       <section class="section">
+          <legend class="legend">
+            <h1 class="legendh1">Minden objektum</h1>
+            <time class="time" datetime="2021-04-09 20:00"><i>2021.04.17.</i></time>
+            <article class="article">Most már ott tartunk, hogy minden objektum, de addig még
+              külön vette a browser object modelhez tartozó tulajdonságokat, amik leginkább a
+              böngésző tulajdonságaihoz kapcsolódnak, pl. látogatások száma, ablak/tab mérete.</br>
+              Aztán külön a document object modelhez tartozó tulajdonságok jöttek, amik az oldallal
+              kapcsolatos információkhoz tudnak hozzányúlni, pl megjelenít szöveget, tudja, hogy mikor
+              volt utoljára frissítve az oldal, ilyenek.</br>
+              Végül a global objecteket mutatta be, amik általános érvényű képességek, jellemzően a
+              stringeket tudja befolyásolni: pl lekéri egy string hosszát, vagy az összes betűt
+              kapitálisra állítja, vagy épp kicsire. (a string az öt adattípus egyike:
+              string, number, boolean, undefined, és null. Egy idézőjel közé írt szöveges
+              tartalom, változókban lehet tárolni.) </br>
+              Aztán azt írja a könyv, hogy van a hatodik adattípus is, ami az objektum. Már megint az
+              objektum. A többi öt a primitív adattípus, ez meg a komplex. És ezen belül a tömb
+              (array) és a függvény(function) is lehet objektum. Itt matekos
+              metódusok jöttek még mindig global objecten belül, pl: kerekítések, tizedek, meg hány
+              tizedesig kereítsen, meg ezek a nem túl izgalmas dolgok.</br>
+              A global objecteken belül van a date object, amivel az időhöz kapcsolódó beállításokat lehet megtenni.
+              Pl visszaszámlálót beállítani, aktuális dátumot kiíratni. Tehát, akkor most a listába ezeket írom,
+              hogy átláthatóbb legyen, mik voltak:
+              <ol class="ordered_list">
+                <li class="olli">Browser Object Model </br>
+                  property pl: window.innerHeight, window.history, window.screen.width </br>
+                  method pl: window.alert(), window.print()
+                </li>
+                <li class="olli">Document Object Model </br>
+                  property pl: document.lastModified, document.title </br>
+                  method pl: document.write(), document.getElementById
+                </li>
+                <li class="olli">Global Object Model
+                  <ul>
+                    <li class="ulli">String Objects</li>
+                    <p>property pl: .length</br>
+                    method pl: toUpperCase(), indexOf(), subString(), replace()</p>
+                    <li class="ulli">Number Object</li>
+                    <p>method pl: isNaN(), toFixed(), toPrecision()
+                    <li class="ulli">Math Object</li>
+                    <p>property pl: Math.Pi</br>
+                    method pl: Math.round(), Math.floor(), Math.random()
+                    <li class="ulli">Date Object</li>
+                    <p>method pl: getDate(), getDay(), getFullYear()
+                  </ul>
+                </li>
+              </ol>
+            </article>
+          </legend>
+        </section>
+    </br>
         <section class="section">
           <legend class="legend">
             <h1 class="legendh1">A tömbök és objektumok viszonyulásai, object modellek fajtái</h1>
-            <time class="time" datetime="2021-04-09 20:00"><i>2021.04.14.</i></time>
+            <time class="time" datetime="2021-04-09 20:00" id="date"><i>2021.04.14.</i></time>
             <article class="article">A tömbök tartalmazhatnak objektumokat, az objektumok meg tömböket, az object model
               meg objektumok csoportja. Az objektumok tartalmazhatnak további objektumokat, akik a gyermek objektumok lesznek.
               Három fajta beépített objektum: browser object model, document object model és global javascript objects. Azt írja,
